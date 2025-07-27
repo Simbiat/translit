@@ -1,14 +1,13 @@
 {
-    "name": "simbiat/pretty-url",
+    "name": "simbiat/translit",
     "type": "library",
     "keywords": [
-        "pretty",
-        "safe",
-        "url",
+        "php",
+        "romanization",
         "transliteration"
     ],
-    "description": "Small class to transliterate lots of characters and make a safe and pretty URL.",
-    "homepage": "https://github.com/Simbiat/pretty-url",
+    "description": "Class to transliterate lots of characters",
+    "homepage": "https://github.com/Simbiat/translit",
     "license": "AGPL-3.0-or-later",
     "authors": [
         {
@@ -19,15 +18,19 @@
         }
     ],
     "require": {
-        "php": "^8.4"
+        "php": "^8.4",
+        "ext-intl": "*"
+    },
+    "replace": {
+        "simbiat/filename-sanitizer": "*"
     },
     "autoload": {
         "psr-4": {
-            "Simbiat\\HTTP\\": "src/"
+            "Simbiat\\Translit\\": "src/"
         }
     },
     "support": {
-        "issues": "https://github.com/Simbiat/pretty-url/issues",
-        "source": "https://github.com/Simbiat/pretty-url"
+        "issues": "https://github.com/Simbiat/translit/issues",
+        "source": "https://github.com/Simbiat/translit"
     }
 }
