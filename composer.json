@@ -12,14 +12,15 @@
     "authors": [
         {
             "name": "Dmitrii Kustov",
-            "email": "support@simbiat.dev",
-            "homepage": "https://www.simbiat.dev",
+            "email": "support@simbiat.eu",
+            "homepage": "https://www.simbiat.eu",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
-        "ext-intl": "*"
+        "php": "^8.5",
+        "ext-intl": "*",
+        "ext-mbstring": "*"
     },
     "replace": {
         "simbiat/filename-sanitizer": "*"

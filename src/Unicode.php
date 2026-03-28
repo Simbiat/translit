@@ -12,7 +12,7 @@ class Unicode
      * Cached Unicode blocks
      * @var array
      */
-    public static array $unicode_blocks = [];
+    private(set) static array $unicode_blocks = [];
     
     /**
      * List of character direction constants mapped to readable names
@@ -107,7 +107,7 @@ class Unicode
     }
     
     /**
-     * Generates 2 files: one with a list of all transliterations, one with all characters that are not transliterated by the library
+     * Generates 2 files: one with a list of all transliterations, one with all characters that are not transliterated by the library. This is mostly for testing and maintenance.
      * @return void
      * @throws \JsonException
      */
@@ -247,7 +247,7 @@ class Unicode
     }
     
     /**
-     * Get the latest list blocks from Unicode.org in an array
+     * Get the latest list of blocks from Unicode.org in an array
      * @return array
      */
     public static function getUnicodeBlocks(): array
@@ -265,7 +265,7 @@ class Unicode
     }
     
     /**
-     * Get block name from codepoint
+     * Get the block name from codepoint
      * @param int $codepoint
      *
      * @return string|null
