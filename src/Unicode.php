@@ -97,7 +97,7 @@ class Unicode
                 continue;
             }
             #Convert code point to UTF-8 character
-            $char = mb_convert_encoding("&#$codepoint;", 'UTF-8', 'HTML-ENTITIES');
+            $char = mb_chr($codepoint, 'UTF-8');
             #Use character as a key, empty string as value
             if (\is_string($char)) {
                 $characters[] = $char;
