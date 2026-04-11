@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace Simbiat\Translit;
+namespace Simbiat\StringHelpers;
 
 /**
  * Functions to decode strings.

@@ -1,13 +1,15 @@
 {
-    "name": "simbiat/translit",
+    "name": "simbiat/stringhelper",
     "type": "library",
     "keywords": [
         "php",
         "romanization",
-        "transliteration"
+        "transliteration",
+        "strings",
+        "sanitization"
     ],
-    "description": "Class to transliterate lots of characters",
-    "homepage": "https://github.com/Simbiat/translit",
+    "description": "Various helpers for working with strings",
+    "homepage": "https://github.com/Simbiat/StringHelper",
     "license": "AGPL-3.0-or-later",
     "authors": [
         {
@@ -23,15 +25,16 @@
         "ext-mbstring": "*"
     },
     "replace": {
-        "simbiat/filename-sanitizer": "*"
+        "simbiat/filename-sanitizer": "*",
+        "simbiat/translit": "*"
     },
     "autoload": {
         "psr-4": {
-            "Simbiat\\Translit\\": "src/"
+            "Simbiat\\StringHelper\\": "src/"
         }
     },
     "support": {
-        "issues": "https://github.com/Simbiat/translit/issues",
-        "source": "https://github.com/Simbiat/translit"
+        "issues": "https://github.com/Simbiat/StringHelper/issues",
+        "source": "https://github.com/Simbiat/StringHelper"
     }
 }

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace Simbiat\Translit;
+namespace Simbiat\StringHelpers;
 
 /**
  * Function to work with Unicode
