@@ -31,6 +31,6 @@ class Sanitize
      */
     public static function whiteString(string $string): bool
     {
-        return \preg_match('/^\s*|\p{C}$/u', $string) === 1;
+        return \preg_match('/^(\s|\p{C})*$/u', $string) === 1;
     }
 }
